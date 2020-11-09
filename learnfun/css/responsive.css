@@ -1,0 +1,267 @@
+/*============================ LOGIN AND SIGNUP MODALS============================*/
+@media (min-width: 1000px) {
+
+    /*COVER PICTURES*/
+    .become_tutor_intro .our_courses_intro p{
+        width: 50%;
+
+    }
+    .become_tutor_intro .our_courses_intro h2{
+        font-size: 60px;
+        /*text-transform: uppercase;*/
+        font-weight: lighter;
+    }
+    /*LEARN FUN TUTOR SECTION TABS*/
+    .tutor_how_to .tab .tablinks{
+        margin-right: 23% !important;
+    }
+
+    .tutor_how_to .tab .tablinks{
+        /*margin-right: 10%;*/
+        /*border-radius: 50%;*/
+        width: 90px !important;
+        height: 90px !important;
+        outline: none !important;
+        /*padding: 10px;*/
+    }
+    /*================ TUTOR LOGIN SECTION =============*/
+    .tutor_login .row .col-md-6:nth-child(1) .row .col-md-12{
+        background-color: red;
+        margin:80px 0 80px -15px;
+        padding: 50px 30px 30px;
+        /*height: 50vh;*/
+    }
+    .tutor_login .row .col-md-6:last-child .row .col-md-12{
+        padding: 50px 30px 30px;
+        margin: 80px -115px 80px 20px;
+        /*height: 50vh;*/
+    }
+    .tutor_login .row .col-md-6:nth-child(1){
+        border: 20px solid #f4f4f4;
+        border-right: 0;
+        padding: 0;
+    }
+    .tutor_login .row .col-md-6:nth-child(2){
+       border: 20px solid #f4f4f4;
+       border-left: 0;
+       padding: 0;
+   }
+   .tutor_login .row .col-md-6 .col-md-12{
+    /*margin: 80px -115px 80px 0;*/
+
+}
+.tutor_login .row .col-md-6:nth-child(1) .row .col-md-12{
+    background-color: #002147;
+    /*margin:80px 0 80px -115px;*/
+    padding: 10px;
+    width: 100%;
+    margin-left: -15px;
+}
+.tutor_login .row .col-md-6:nth-child(1) .row .col-md-12 h1{
+    font-weight: lighter;
+    font-size: 40px;
+    color: #fff;
+}
+.tutor_login .row .col-md-6:nth-child(2) .row .col-md-12{
+    background-color: #fdc800;
+    padding: 10px;
+    margin-left: 15px;
+}
+/* COURSE DETAIL SIDEBAR ON SCROLL EVENT*/
+.course_detail_sidebar.active{
+    position: fixed !important;
+    top: 15%;
+    width: 20%;
+    padding: 0px;
+    border: 1px solid #707070;
+    background: #fff;
+    z-index: 555;
+    border-radius: 0px;
+    transition: .5s;
+}
+.tutor_help_hero .container p{
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 4% 12%;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: .5px;
+}
+.tutor_help_hero{
+    margin: 7% 0;
+    padding-top: 5%;
+    padding-bottom: 22%;
+    height: 50vh;
+    position: relative;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: bottom;
+    background-attachment: fixed !important;
+    background: url(../img/tutor_class.jpg);
+}
+.tabcontent_section_img{
+    width: 100%;
+    height: 300px;
+}
+.modal-dialog{
+    width: 27%;
+}
+.courses_section button, .course_cards button{
+    display: none;
+}
+.carder:hover .hidden_menu, .carder:hover .hidden_menu_2{
+    display: block !important;
+    z-index: 490 !important;
+    /*position: relative;*/
+    /*transform: translateY(40px) !important;*/
+}
+.course_cards{
+    transition: .5s;
+}
+.course_cards .hidden_menu::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #fff;
+    position: absolute;
+    left: -12px;
+    top: 40%;
+    transform: translateY(-27%);
+}
+.course_cards .hidden_menu{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    left: 99%;
+    bottom:20px;
+    margin-bottom: 0%;
+    padding: 20px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+}
+.course_cards .carder:last-child .hidden_menu{
+    background-color: #fff !important;
+    display: none;
+    width: 100%;
+    position: absolute !important;
+    z-index: 10;
+    top: 5% !important;
+    left: -99% !important;
+    bottom:0px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 29px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.course_cards .carder:last-child .hidden_menu::after{
+    display: none;
+}
+.course_cards .carder:last-child .hidden_menu::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #fff;
+    border-top: 12px solid transparent;
+    margin-top: -17px;
+    right: -3.5%;
+    top: 20%;
+    position: absolute;
+}
+.course_cards .hidden_menu #course_detail_stats small{
+    padding-left: 5px;
+    clear: right !important;
+}
+#course_detail_stats .fa-clock{
+    margin-left: 20px;
+}
+.hidden_menu h6{
+    margin-left: 5px;
+    font-size: 20px;
+}
+.course_cards .hidden_menu small:nth-child(1){
+    /*margin-left: -55%;*/
+    margin-bottom: 6% !important;
+}
+.course_cards .hidden_menu p{
+    text-align: left;
+}
+.course_cards .hidden_menu #course_description{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.course_cards .hidden_menu button:first-child{
+    margin-right: 10px !important;
+}
+.course_cards .hidden_menu button{
+    padding: 5px 14px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.contact_form .credential_form{
+    width: 100%;
+}
+#credential_form_last{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+#textarea{
+    padding: 2% 1%;
+    resize: none;
+}
+.comment_form .overall_form_group{
+    display: flex;
+}
+.blog_author_section{
+    box-shadow: 0px 10px 30px 0px rgba(164, 164, 164, 0.52);
+    margin-bottom: 0;
+    padding: 4% 5%;
+    display: flex;
+    margin: 3% 10%;
+    height: 100%;
+}
+.copyright {
+        color: white !important;
+        margin-top: 22%;
+        font-size: 20px;
+    }
+    .intro-page .intro-page-text{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    padding: 5% 25%;
+}
+.intro-page .intro-page-buttons button{
+    padding: 15px 50px;
+    width: auto;
+    font-size: 16px;
+    background: #fdc800;
+    color: #002147;
+    font-weight: bold;
+    border:none;
+    transition: .5s;
+}
+.intro-page .intro-page-buttons button:first-child{
+    margin-right: 20px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+    #shit {
+        width: 50% !important;
+        height: 12vh !important;
+    }
+
+    #navigationbarmenu {
+        text-align: center;
+    }
+
+    #firstHeader {
+        display: none;
+    }
+
+}
